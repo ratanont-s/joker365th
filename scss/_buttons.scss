@@ -1,0 +1,33 @@
+.btn {
+    border-width: 0;
+    border-radius: 10rem;
+    padding: .5rem 2rem;
+    @include font-size(25);
+
+    &:hover {
+        filter: saturate(1.5) brightness(1.1);
+    }
+}
+
+.btn-primary {
+    background: url('../img/btn-primary.png') repeat-x center center/auto 100%;
+}
+
+.btn-secondary {
+    background: url('../img/btn-secondary.png') repeat-x center center/auto 100%;
+}
+
+.btn-info {
+    background: url('../img/btn-info.png') repeat-x center center/auto 100%;
+}
+
+@each $color,
+$value in $theme-colors {
+    .btn-#{$color}--shadow {
+        box-shadow: 0 0 .5rem rgba($value, .7);
+
+        &:hover {
+            box-shadow: 0 0 1rem rgba($value, .8);
+        }
+    }
+}

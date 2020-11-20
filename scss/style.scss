@@ -1,0 +1,20 @@
+@import './fonts';
+@import './variables';
+@import './bootstrap/bootstrap.scss';
+
+// Components
+@import './top';
+@import './buttons';
+
+// Layout
+@import './header';
+@import './footer';
+
+// Pages
+@import './pages/index';
+
+html,
+body {
+    position: relative;
+    overflow-x: hidden;
+}

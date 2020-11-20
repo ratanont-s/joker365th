@@ -1,0 +1,17 @@
+// Colors
+$primary:#fdf114;
+$secondary: #3C0A7B;
+
+$body-bg: #0c112e;
+$body-color: #ffffff;
+
+$header-bg: rgba(#002330, .7);
+
+$promotion-bg: linear-gradient(rgba($body-bg, 0), rgba($body-bg, 1));
+
+// Fonts
+$font-family-base: "DB HelvethaicaMon X Bd";
+$line-height-base: 1;
+$headings-line-height: $line-height-base;
+$enable-responsive-font-sizes: true;
+$link-hover-decoration: none;
