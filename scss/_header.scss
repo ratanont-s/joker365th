@@ -65,18 +65,6 @@ header {
 
     @include media-breakpoint-down(md) {
         .navbar {
-            >.container {
-                position: relative;
-                justify-content: center;
-            }
-
-
-            &-toggler {
-                position: absolute;
-                top: 50%;
-                left: 15px;
-                transform: translateY(-50%);
-            }
 
             .btn-login {
                 display: none;
