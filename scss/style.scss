@@ -4,7 +4,10 @@
 
 // Components
 @import './top';
+@import './about';
 @import './buttons';
+@import './slot';
+@import './casino';
 
 // Layout
 @import './header';
@@ -12,6 +15,9 @@
 
 // Pages
 @import './pages/index';
+@import './pages/promotion';
+@import './pages/blog';
+@import './pages/contact';
 
 html,
 body {

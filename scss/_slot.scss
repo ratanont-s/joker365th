@@ -1,0 +1,19 @@
+.slot {
+    padding: 1rem 0;
+    position: relative;
+
+    &__item {
+        display: block;
+        position: relative;
+        margin-bottom: 1rem;
+        filter: drop-shadow(0 2rem 2rem $secondary);
+
+        &-img {
+            width: 100%;
+        }
+
+        &:hover {
+            filter: saturate(1.5) brightness(1.1);
+        }
+    }
+}

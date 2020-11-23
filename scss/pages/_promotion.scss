@@ -1,0 +1,18 @@
+.main__promotion {
+
+    .promotion,
+    .slot,
+    .casino {
+        &__card {
+            display: block;
+
+            &-img {
+                width: 100%;
+            }
+
+            &:hover {
+                filter: saturate(1.5) brightness(1.1) drop-shadow(0 0 1rem $secondary);
+            }
+        }
+    }
+}

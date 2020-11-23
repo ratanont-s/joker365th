@@ -1,40 +1,4 @@
 .main__index {
-    .about {
-        position: relative;
-        padding: 70px 0 35px;
-        overflow: hidden;
-        margin-top: -35px;
-
-        &__bg {
-
-            img {
-                position: absolute;
-                top: 0;
-                z-index: -1;
-            }
-        }
-
-        &__title {
-            @include font-size(53);
-        }
-
-        &__text {
-            @include font-size(26);
-        }
-
-        @include media-breakpoint-up(lg) {
-            padding: 150px 0 50px;
-            margin-top: -100px;
-
-            &__bg {
-                img {
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-            }
-        }
-    }
-
     .promotion {
         position: relative;
         background-color: $body-bg;

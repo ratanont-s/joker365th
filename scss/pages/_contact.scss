@@ -1,0 +1,64 @@
+.main__contact {
+    .contact {
+        &__top {
+            position: relative;
+            z-index: 0;
+
+            &-bg {
+                width: 100%;
+            }
+
+            >.container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+
+        &__details {
+            position: relative;
+            z-index: 1;
+            margin-top: -4rem;
+
+            &-title {
+                position: relative;
+                @include font-size(65);
+                @include gradient-y($start-color: #ffff00, $end-color: #ff6e02, $start-percent: 0%, $end-percent: 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                &--shadow {
+                    position: absolute;
+                    top: 0;
+                    color: $secondary;
+                    -webkit-text-fill-color: $secondary;
+                    z-index: -1;
+                    -webkit-text-stroke: .25em $secondary;
+                }
+            }
+
+            .btn-line {
+                @include gradient-y($start-color: #00c70d, $end-color: #038a02, $start-percent: 0%, $end-percent: 100%);
+                position: relative;
+                @include font-size(40);
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    border: .5rem solid rgba($white, .1);
+                    border-radius: 10rem;
+                }
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin-top: -6rem;
+            }
+        }
+    }
+}
