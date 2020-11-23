@@ -5,12 +5,21 @@ header {
         padding-left: 0;
         padding-right: 0;
 
+        >.container {
+            position: relative;
+            justify-content: center;
+        }
+
         &-brand {
             margin-right: 0;
         }
 
         &-toggler {
+            position: absolute;
+            top: 50%;
+            left: 15px;
             border-width: 0;
+            transform: translateY(-50%);
 
             &:focus {
                 outline: none;
