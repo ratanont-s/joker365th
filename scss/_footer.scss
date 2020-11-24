@@ -21,6 +21,17 @@
         &-text {
             font-size: 18px;
         }
+        &__download{
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            &-link{
+                display: inline-block;
+            }
+            &-img{
+                height: 50px;
+            }
+        }
     }
 
     &__bottom {
@@ -70,6 +81,11 @@
 
             &-text {
                 @include font-size(26);
+            }
+            &__download{
+                &-img{
+                    height: 60px;
+                }
             }
         }
 
